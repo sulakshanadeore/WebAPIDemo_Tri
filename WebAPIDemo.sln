@@ -4,12 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIDemo", "WebAPIDemo\WebAPIDemo.csproj", "{6D77F68E-F67A-4A85-9A24-75058D4762C5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0196565B-30FD-4265-AC59-B8ACA5DD1DD6} = {0196565B-30FD-4265-AC59-B8ACA5DD1DD6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{B6DF6A58-A395-4824-B794-1ED0805AA2D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{0196565B-30FD-4265-AC59-B8ACA5DD1DD6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppUILayer", "AppUILayer\AppUILayer.csproj", "{EA7B0614-45FD-4231-92F1-24CBC241886C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D77F68E-F67A-4A85-9A24-75058D4762C5} = {6D77F68E-F67A-4A85-9A24-75058D4762C5}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
