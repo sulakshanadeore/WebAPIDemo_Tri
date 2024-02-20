@@ -1,0 +1,169 @@
+Remoting:
+--------
+
+	client		Server
+tcpip:       
+ftp:
+----------------------------------------
+Web Service(aspx) service :
+Concept of  Service Oriented Architecture
+       client            Server
+http:
+		
+Choosing Services as per your requirement: SERvice Oriented Architecture
+		MyPlan: 100sms+ 1gb+2 days + OTT (40)
+		MyPlan: 0sms+ 2gb+30 days
+                
+--------------------------------
+WCF: Windows Communication Foundation: Laptops and Desktops(Std Devices)
+        Client           Server
+tcpip
+udp
+ftp
+http
+https
+etc.....
+Service Oriented Architecture
+
+Interface:
+1) Dependency Injection
+2) Service Oriented Architecture
+	
+10         10
+I1         I2
+add        square
+subtract   cube
+multiply   squareRoot
+
+Only subscribing for I1 methods(Services)
+Class: 
+
+------------------------------------------
+	Web API: Any device of any OS(ios,Android,Windows,Unix) + SOA
+REST Ful Web Services:
+REST: REpresentational State Transfer
+      show the data represented by the API 
+
+is a architectural style used for design and development of the Web App.
+Distributed Architecture, data behaviour on the web(text, multimedia (image,video) etc)
+
+Test/Use:
+Test Tools:
+Postman
+Swagger
+
+For using: require a device
+
+TestCases: Nunit,XUnit,MOQ etc
+        
+---------------------------------------------
+
+MicroService: Architecture difference
+-------------------------------------------
+
+
+
+
+
+      App UI Layer         WebAPILayer(ServiceLayer)           BusinessLayer                DataAccessLayer             Database                 
+			     (GET.PUT.POST.DELETE)
+				HttpVerbs
+	
+Using/Calling
+MVC
+Angular
+    ElectronicProducts\Index--> GET------------------------>ShowList()----------------->PopulateList(cn,list,return list)
+
+
+The user wants a list of products to be displayed on the View:
+He will click ShowList(Index)--->
+1) DataAccessLayer will be fetching the data from the database. Build DAL.
+2) DataAccessLayer will forward the fetched data to the BusinessLayer. Add dal.dll to Business
+3) BusinessLayer will forward the data to the API Layer
+4) API layer will forward the data to the AppUI Layer
+Project Dependencies:
+1) Create DAL----> Build Dal
+2) Create Business----->
+3) Add Dal reference in Business(ie Business depends on DAL)
+4) create Web API
+5) Add Business refernce in Web API(ie API depends on Business)
+6) Create AppUI (MVC App)
+7) Call Web API url in AppUI
+
+
+
+
+1)GET means FIND
+<IEnumerable> GET: return/show list/ienumerable/array/collection
+
+
+
+   string  getAValueAtIndexNoSpecified(int id)
+
+2) void POST: Add/Create
+
+3) PUT : Update/EXisting record update
+4) DELETE: remove
+
+
+1) GET/PUT/POST/DELETE
+2) How to differentiate between 
+   a)Normal Controller(inherits from Controller) and Api Controller( inherits from API Controller)
+   b)Names of the action methods: Index,Create,Details,Delete,Edit                 GET/PUT/POST/DELETE
+   c)ControllerName/ActionName                                                api/ApiControllerName
+   d) using System.Web.Mvc;							using System.Web.Http;
+
+
+Web Apps: MVC/Angular/React/JAvaScript/jQuery
+
+<html>
+<head>
+</head>
+<body>
+   <form>
+<lable>Enter id<label>
+<submit>
+output
+</form>
+</body>
+
+</html>
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+

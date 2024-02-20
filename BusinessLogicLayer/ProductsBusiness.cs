@@ -9,6 +9,18 @@ namespace BusinessLogicLayer
     public class ProductsBusiness
     {
 
+        public void CreateProduct(BusinessProd product)
+        {
+
+            ProductsDAL dal=new ProductsDAL();
+            DataAccessLayer.Product p = new Product();
+            p.Prodname = product.ProductName;
+
+
+            dal.InsertProduct(p);
+
+                }
+
         public List<BusinessProd> ShowList() 
         {
 

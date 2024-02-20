@@ -25,5 +25,15 @@ namespace WebAPIDemo.Controllers
         
         }
 
+
+        public void PostProduct(Products products)
+        { 
+        ProductsBusiness business=new ProductsBusiness();
+            BusinessLogicLayer.BusinessProd product = new BusinessProd();
+            product.ProductName = products.ProductName;
+            business.CreateProduct(product);
+        
+        }
+
     }
 }

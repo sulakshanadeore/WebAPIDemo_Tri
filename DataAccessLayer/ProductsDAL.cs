@@ -9,6 +9,20 @@ namespace DataAccessLayer
 {
     public class ProductsDAL
     {
+        public void InsertProduct(Product product) 
+        {
+            SqlConnection cn = new SqlConnection("server=.\\sqlexpress;database=Northwind;Integrated Security=true");
+            SqlCommand cmd = new SqlCommand("[dbo].InsertProduct", cn);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@p_ProductName", product.Prodname);
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            cn.Close();
+            cn.Dispose();
+
+
+        }
+
         public List<Product> PopulateList()
         {
             SqlConnection cn = new SqlConnection("server=.\\sqlexpress;database=Northwind;Integrated Security=true");
